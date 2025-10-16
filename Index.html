@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>zepto</title>
+    <link rel="icon" href="./Logo_of_Zepto.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    
+
+       #parent {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgb(238, 196, 238);
+            position: sticky;
+            top: 0px;
+            
+        }
+ 
+        #select {
+            display: flex;
+        }
+
+        #seller {
+            margin-left: 450px;
+        }
+
+        #seller a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #sellera:hover {
+            color: purple;
+        }
+
+        #z {
+            color:  rgb(55,15,110);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+
+        }
+
+        select {
+            margin-left: 30px;
+            height: 30px;
+
+        }
+
+        #form {
+            position: relative;
+        }
+
+        #mag {
+            position: absolute;
+            right: 670px;
+            top: 27px;
+        }
+
+        #fo {
+            margin-left: 300px;
+
+        }
+
+        #se {
+            width: 270px;
+            height: 20px;
+            border-radius: 10px;
+        }
+
+        #all ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+
+        }
+
+        .ai:hover {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        input {
+            border: none;
+            outline: none;
+        }
+
+        #zen {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+        }
+
+        #pan {
+            display: flex;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: greenyellow;
+            border-radius: 20px;
+
+        }
+
+        #pan h1 {
+            font-size: 40px;
+        }
+
+        #pan p {
+            font-size: 25px;
+        }
+
+        button {
+            background-color: whitesmoke;
+            color: black;
+            padding: 10px;
+            width: 150px;
+            border-radius: 10px;
+            font-size: 20px;
+            border: none;
+        }
+
+        #veg {
+            margin-left: 80px;
+        }
+
+        img {
+            border-radius: 20px;
+        }
+
+        #sonic {
+            display: flex;
+            color: white;
+
+        }
+
+        #a1 {
+            background-color: black;
+            width: 600px;
+            height: 330px;
+            margin-top: 20px;
+            border-radius: 20px;
+            margin-left: 100px;
+
+        }
+
+        #head {
+            margin-top: 30px;
+        }
+
+        #super {
+            margin-left: 30px;
+        }
+
+        #super h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: silver;
+            font-size: 35px;
+        }
+
+        #super span {
+            font-size: 20px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        #super p {
+            color: rgba(255, 255, 255, 0.471);
+        }
+
+        .cof {
+            background-color: rgb(52, 48, 48);
+            width: 100px;
+            height: 120px;
+            margin-left: 20px;
+            padding: 10px;
+            gap: 10px;
+            border-radius: 20px;
+
+        }
+
+        .cof p {
+            color: white;
+        }
+
+        #add {
+            display: flex;
+
+        }
+
+        #a12 {
+            display: flex;
+        }
+
+        #beauty {
+            display: flex;
+            color: rgb(11, 11, 11)
+        }
+
+        #fest {
+            margin-left: 30px;
+        }
+
+        #a2 {
+            background-color: rgb(235, 232, 232);
+            width: 600px;
+            height: 330px;
+            margin-top: 20px;
+            border-radius: 20px;
+            margin-left: 100px;
+
+        }
+
+        #leg {
+            margin-top: 30px;
+        }
+
+        #sub {
+            display: flex;
+            margin-top: 10px;
+            color: rgb(199, 41, 125);
+        }
+
+        .tea {
+            background-color: rgb(215, 103, 146);
+            width: 100px;
+            height: 120px;
+            margin-left: 20px;
+            padding: 10px;
+            gap: 10px;
+            border-radius: 20px;
+        }
+
+        #fest h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(223, 16, 16);
+            font-size: 35px;
+        }
+
+        #fest span {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        #fest p {
+            color: rgba(0, 0, 0, 0.962);
+        }
+
+        .tea p {
+            color: rgb(232, 230, 230);
+        }
+
+        #co {
+            display: flex;
+        }
+
+        #op {
+            background-color: rgba(218, 185, 136, 0);
+            margin-left: 20px;
+            line-height: 50px;
+        }
+
+        #op h1 {
+            font-size: 20px;
+            color: rgba(143, 75, 8, 0.766);
+        }
+
+        #op p {
+            font-size: 30px;
+            color: rgba(143, 75, 8, 0.766);
+
+        }
+
+        #jk {
+            display: flex;
+            background-color: rgba(243, 231, 205, 0.504);
+            margin-left: 100px;
+            margin-top: 30px;
+            border-radius: 20px;
+            padding: 50px;
+            margin-right: 100px;
+            height: 360px;
+        }
+
+        #bue {
+            background-color: rgba(143, 75, 8, 0.766);
+            color: white;
+
+        }
+
+        .milk {
+            width: 150px;
+            height: 360px;
+            margin-left: 20px;
+            padding: 20px;
+            gap: 10px;
+            border-radius: 20px;
+            margin-left: 40px;
+        }
+
+        #divid {
+            display: flex;
+            margin-left: 30px;
+
+        }
+
+        .milk p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+
+        }
+
+        .milk span {
+            color: green;
+            background-color: rgba(195, 225, 149, 0.611);
+        }
+
+        .er {
+            background-color: white;
+            border: 2px solid red;
+            width: 100px;
+            height: 40px;
+            align-items: center;
+            font-size: 15px;
+            margin-left: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .er:hover {
+            background-color: tomato;
+        }
+
+        .coa {
+            width: 150px;
+            height: 360px;
+            margin-left: 20px;
+            padding: 20px;
+            gap: 10px;
+            border-radius: 20px;
+            margin-left: 40px;
+
+        }
+
+        #weak {
+            font-size: 13px;
+            margin-left: 30px;
+        }
+
+        #weak h1 {
+            margin-left: 60px;
+        }
+
+        #cat {
+            display: flex;
+        }
+
+        .coa p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        .coa span {
+            color: green;
+            background-color: rgba(195, 225, 149, 0.611);
+        }
+
+        #vk {
+            display: flex;
+            background-color: rgba(181, 204, 179, 0.504);
+            margin-left: 100px;
+            margin-top: 30px;
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 100px;
+            height: 360px;
+        }
+
+        #do {
+            display: flex;
+        }
+
+        .rose {
+            width: 100px;
+            height: 120px;
+            margin-left: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            margin-left: 40px;
+        }
+
+        #mulit {
+            display: flex;
+            margin-left: 30px;
+        }
+
+        .flower {
+            border-radius: 50px;
+        }
+
+        #po p {
+            font-size: 30px;
+            color: rgba(9, 65, 9, 0.974);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #po h1 {
+            color: rgba(6, 53, 6, 0.415);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+
+        #mike {
+            font-size: 13px;
+            margin-left: 30px;
+        }
+
+        #eren {
+            display: flex;
+        }
+
+        #tk {
+            display: flex;
+            background-color: rgba(118, 118, 183, 0.193);
+            margin-left: 100px;
+            margin-top: 100px;
+            border-radius: 20px;
+            padding: 20px;
+            margin-right: 100px;
+            height: 360px;
+        }
+
+        #ro {
+            display: flex;
+        }
+
+        #np {
+            background-color: rgba(218, 185, 136, 0);
+            margin-left: 20px;
+            line-height: 50px;
+        }
+
+        #np h1 {
+            font-size: 20px;
+            color: rgb(63, 4, 171);
+        }
+
+        #np p {
+            font-size: 35px;
+            color: rgb(63, 4, 171);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #redd {
+            color: white;
+            background-color: rgb(63, 4, 171);
+        }
+
+        #matrix {
+            display: flex;
+            margin-left: 30px;
+        }
+
+        .badam {
+            width: 150px;
+            height: 360px;
+            margin-left: 20px;
+            padding: 20px;
+            gap: 10px;
+            border-radius: 20px;
+            margin-left: 40px;
+        }
+
+        .badam p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        .badam span {
+            color: green;
+            background-color: rgba(195, 225, 149, 0.611);
+        }
+
+        #bank {
+            font-size: 13px;
+            margin-left: 30px;
+        }
+
+        #cv {
+            display: flex;
+        }
+
+        .cola {
+            width: 150px;
+            height: 360px;
+            margin-left: 20px;
+            padding: 20px;
+            gap: 10px;
+            border-radius: 20px;
+            margin-left: 40px;
+        }
+
+        .cola p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        .cola span {
+            color: green;
+            background-color: rgba(195, 225, 149, 0.611);
+        }
+
+        #ben {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+
+        #sen {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+        a{
+        text-decoration: none;
+        
+         }
+         #agro{
+            color: #1a1a1a;
+         }
+
+        .coffee {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .coffee p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .title {
+            margin-left: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+
+        }
+
+        #jen {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        #tank {
+            font-size: 13px;
+            margin-left: 30px;
+        }
+
+        #vi {
+            display: flex;
+            opacity: 0.4;
+        }
+
+        #zeto {
+            margin-left: 100px;
+            padding-top: 250px;
+            padding-left: 50px;
+            padding-bottom: 150px;
+
+        }
+
+        #zeto h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 80px;
+        }
+
+        #zeto p {
+            position: relative;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #zeto p span {
+            color: #5e087d;
+        }
+
+        #hearte {
+            position: absolute;
+        }
+
+        #it {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #works {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+
+        .app {
+            text-align: center;
+            width: 220px;
+            height: 230px;
+            margin-left: 50px;
+            border: 1px solid white;
+            box-shadow: 0px 15px 15px rgb(225, 220, 220);
+            padding: 40px;
+        }
+
+        .app h4 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .app p {
+            font-family: 'Times New Roman', Times, serif;
+            color: #696969;
+        }
+
+        #brands {
+            margin-left: 40px;
+            line-height: 50px;
+        }
+
+        #brands h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 18px;
+        }
+
+        #brands span {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #brands pre {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #datali {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .il {
+            line-height: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #dh2 h2 {
+            margin-left: 120px;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 60px;
+        }
+        .back{
+            line-height: 40px;
+        }
+        .play {
+                border:1px solid black ;
+                font-size: 15px;
+                height: 50px;
+                width: 300px;
+                border-radius: 4px; 
+               margin-top: 10px;
+               padding-bottom: 50px;
+        }
+         .back h1{
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+         }
+        .back span{
+                 text-align: center;
+         }
+
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="select">
+
+          <a href="./tk zepto .html">  <span id="z">zepto</span></a>
+            <select name="english" id="english">
+                <option value="">... Select your location...</option>
+                <option value="english">chennai </option>
+                <option value="tamil">madurai </option>
+                <option value="telugu">trichy </option>
+                <option value="French">vellore </option>
+            </select>
+
+            <div id="fo">
+                <form action="">
+                    <input id="se" type="text" placeholder="search">
+                    <i id="mag" class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+
+            <div id="seller">
+
+                <a href="./tk zepto login.html"><i class="fa-regular fa-user" style="color: #1a1a1a;"></i>
+                                                                                                  Login</a>
+             <a href="./tkzeptopayment.html">     <i class="fa-solid fa-cart-shopping" style="color: #303031;"></i>
+              Add cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="all">
+
+        <ul>
+            <li class="ai"> <i class="fa-solid fa-bag-shopping" style="color: #a20fe6;"></i>All</li>
+            <li class="ai"> <i class="fa-solid fa-mug-saucer" style="color: #6f0a94;"></i>Cafe</li>
+            <li class="ai"><i class="fa-solid fa-house-chimney" style="color: #5e087d;"></i>Home</li>
+            <li class="ai"><i class="fa-solid fa-gamepad" style="color: #8210e0;"></i> Toys </li>
+            <li class="ai"><i class="fa-solid fa-carrot" style="color: #8212de;"></i> Fresh</li>
+            <li class="ai"><i class="fa-solid fa-headphones" style="color: #8611d4;"></i> Electronics </li>
+            <li class="ai"><i class="fa-solid fa-mobile" style="color: #720ac7;"></i> Moblie</li>
+            <li class="ai"><i class="fa-solid fa-paintbrush" style="color: #730dd9;"></i>Beauty</li>
+            <li class="ai"> <i class="fa-solid fa-shirt" style="color: #8119d7;"></i>Fashion</li>
+        </ul>
+    </div>
+    <div>
+        <div id="zen">
+            <div class="coffee">
+                <img src="./all/Screenshot 2025-06-26 194443.png" alt="" width="100px" height="100px">
+                <p> Fruits &<br>
+                    vegetables </p>
+
+
+            </div>
+            <div class="coffee">
+                <img src="./all/Screenshot 2025-06-26 194457.png" alt="" width="100px" height="100px">
+                <p> Atta, Rice, <br>
+                    oil & Dals </p>
+
+
+            </div>
+
+            <div class="coffee">
+                <img src="./all/Screenshot 2025-06-26 194504.png" alt="" width="100px" height="100px">
+                <p> masala & <br>
+                    Dry fruits </p>
+
+
+            </div>
+
+            <div class="coffee">
+                <img src="./all/Screenshot 2025-06-26 194509.png" alt="" width="100px" height="100px">
+                <p> zepto cafe <br>
+                    bun </p>
+
+
+            </div>
+
+            <div class="coffee">
+                <img src="./all/Screenshot 2025-06-26 194515.png" alt="" width="100px" height="100px">
+                <p> sweet cravings <br>
+                    dairy milk </p>
+            </div>
+
+            <div class="coffee">
+                <img src="./all/Screenshot 2025-06-26 194521.png" alt="" width="100px" height="100px">
+                <p> Toys , card games &<br>
+                    sports</p>
+
+
+            </div>
+
+        </div>
+
+        <div id="pan">
+            <div id="paan">
+
+                <h1> Paan corner </h1>
+                <p>Get smoking accessories, fresheners & more in 10 min
+                    this monsoon with zepto </p>
+
+                <button style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> order
+                    now</button>
+            </div>
+
+            <div id="veg"> <img src="./all/vege.png" alt="" width="400px" height="200px"></div>
+
+        </div>
+        <div id="a12">
+
+            <div id="a1">
+                <div id="sonic">
+
+                    <div id="super">
+                        <p>
+                            co-powered by <br>
+                            Boat Sonata Titan Rolex
+                        </p>
+                        <h1>Super Sonic </h1>
+                        <span>Deals</span>
+                        <span>upto90%</span>
+                    </div>
+                    <div id="head">
+                        <img src="./img/Screenshot 2025-06-27 230323.png" alt="" height="100px" width="350px">
+
+                    </div>
+
+
+                </div>
+                <div id="add">
+                    <div class="cof">
+                        <img src="./applicatiom/Screenshot 2025-06-27 223722.png" alt="" width="90px" height="50px">
+                        <p> home & kictchen appliances </p>
+                    </div>
+
+                    <div class="cof">
+                        <img src="./applicatiom/Screenshot 2025-06-27 223703.png" alt="" width="90px" height="60px">
+                        <p> audio gear &
+                            watches </p>
+                    </div>
+                    <div class="cof">
+                        <img src="./applicatiom/Screenshot 2025-06-27 223736.png" alt="" width="90px" height="60px">
+                        <p> tech accessories
+                        </p>
+                    </div>
+                    <div class="cof">
+                        <img src="./applicatiom/Screenshot 2025-06-27 223806.png" alt="" width="100px" height="60px">
+                        <p> proffessional
+                            & grooming </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="a2">
+                <div id="beauty">
+
+                    <div id="fest">
+                        <p>
+                            co-powered by <br>
+                            Lakme
+                        </p>
+                        <h1>Beauty Lit</h1>
+                        <span>Fest</span>
+                        <span>upto60%</span>
+                    </div>
+                    <div id="leg">
+                        <img src="./beauty/Screenshot 2025-06-30 192921.png" alt="" height="100px" width="350px">
+
+                    </div>
+
+
+                </div>
+                <div id="sub">
+                    <div class="tea">
+                        <img src="./beauty/Screenshot 2025-06-30 192659.png" alt="" width="90px" height="70px">
+                        <p> Nails & more </p>
+                    </div>
+
+                    <div class="tea">
+                        <img src="./beauty/Screenshot 2025-06-30 192644.png" alt="" width="90px" height="70px">
+                        <p> Dazzling Eyes
+                        </p>
+                    </div>
+                    <div class="tea">
+                        <img src="./beauty/Screenshot 2025-06-30 192606.png" alt="" width="90px" height="70px">
+                        <p> luscious
+                            lips </p>
+                    </div>
+                    <div class="tea">
+                        <img src="./beauty/Screenshot 2025-06-30 192621.png" alt="" width="100px" height="70px">
+                        <p> Flawless Face
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="jk">
+            <div id="co">
+                <div id="op">
+                    <h1> COFFEE LOVERS </h1>
+                    <p> Dive into the <br>
+                        World of Fresh <br>
+                        Brew
+                    </p>
+                    <div>
+                        <button id="bue" type="button">More items <i class="fa-solid fa-greater-than"
+                                style="color: #f2f2f2;"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="bin">
+                <div id="divid">
+                    <div class="milk">
+                        <img src="./cofee/Screenshot 2025-07-01 113552.png" alt="" width="150px" height="160px">
+                        <button class="er" type="button">Add Now</button>
+                        <p>$120 <del>$150</del> <br>
+                            <span>$340 off</span> <br>
+                            vietnamese cold
+                            coffee <br>
+                            <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.4</span>(2.2k)
+                        </p>
+                    </div>
+
+                    <div class="milk">
+                        <img src="./cofee/Screenshot 2025-07-01 113612.png" alt="" width="150px" height="160px">
+                        <button class="er" type="button">Add Now</button>
+                        <p> $129 <del>$250</del> <br>
+                            <span>$230 off</span> <br>
+                            classic cold
+                            coffee <br>
+                            <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.4</span>(1.5k)
+
+                        </p>
+                    </div>
+                    <div class="milk">
+                        <img src="./cofee/Screenshot 2025-07-01 113637.png" alt="" width="150px" height="160px">
+                        <button class="er" type="button">Add Now</button>
+                        <p> $129 <del>$139</del> <br>
+                            <span>$190 off</span> <br>
+                            Americano
+                            <br>
+                            <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.0</span>(239)
+
+                        </p>
+                    </div>
+                    <div class="milk">
+                        <img src="cofee/Screenshot 2025-07-01 113653.png" alt="" width="150px" height="160px">
+                        <button class="er" type="button">Add Now</button>
+                        <p> $149 <del>$139</del> <br>
+                            <span>$170 off</span> <br>
+                            cappuccino
+                            <br>
+                            <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(579)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="weak">
+            <h1>Elevate Yourself</h1>
+            <div id="cat">
+                <div class="coa">
+                   <a  id="agro"   href="./tk zepto cart.html"> <img src="./elevate/Screenshot 2025-07-01 132649.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p>$11390 <del>$31050</del> <br>
+                        <span>$21.3koff</span> <br>
+                        Agaro Rejoice Foot,
+                        Calf And Leg Massager <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.5</span>(768) </a>
+                    </p>
+                </div>
+
+                <div class="coa">
+                    <img src="./elevate/Screenshot 2025-07-01 132721.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $12009 <del>$43050</del> <br>
+                        <span>$23000 off</span> <br>
+                        Agaro Amaze Foot, Calf & Leg Massager<br>
+                        with vibrater <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.4</span>(1.5k)
+                    </p>
+                </div>
+                <div class="coa">
+                    <img src="./elevate/Screenshot 2025-07-01 132740.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $1209 <del>$3009</del> <br>
+                        <span>$1000 off</span> <br>
+                        Ambrane 65W Charger Adapter, 3 Ports - 2 Type C
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.0</span>(239)
+
+                    </p>
+                </div>
+                <div class="coa">
+                    <img src="./elevate/Screenshot 2025-07-01 132758.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $149 <del>$459</del> <br>
+                        <span>$250 off</span> <br>
+                        Nu Republic Blaze Hypersonic 50W Usb Type C Cable 3.5 A 1 M Cable
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(5.7K)
+                    </p>
+                </div>
+                <div class="coa">
+                    <img src="./elevate/Screenshot 2025-07-01 132828.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $2934 <del>$3239</del> <br>
+                        <span>$1034 off</span> <br>
+                        Lifelong Rechargeable Gun Massager For Pain
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(579)
+                    </p>
+                </div>
+                <div class="coa">
+                    <img src="./elevate/Screenshot 2025-07-01 132848.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $4439 <del>$5459</del> <br>
+                        <span>$1320 off</span> <br>
+                        Agaro Dual Channel Tens Massager Tm2421 24 Modes
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(579)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="vk">
+            <div id="do">
+                <div id="po">
+                    <h1>More To Love </h1>
+                    <p> Explore more & <br>
+                        uncover hidden <br>
+                        gems
+                    </p>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="dust">
+                <div id="mulit">
+                    <div class="rose">
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163349.png" alt="" width="90px"
+                            height="90px">
+                        <p> moblie <br> accessories </p>
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163414.png" alt="" width="90px"
+                            height="90px">
+                        <p> home <br> appliances</p>
+                    </div>
+
+                    <div class="rose">
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163539.png" alt="" width="100px"
+                            height="100px">
+                        <p> blocks & <br> puzzles </p>
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163548.png" alt="" width="100px"
+                            height="100px">
+                        <p>Bags & <br> accessories</p>
+                    </div>
+                    <div class="rose">
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163554.png" alt="" width="100px"
+                            height="100px">
+                        <p>pet treats <br> & toys </p>
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163604.png" alt="" width="100px"
+                            height="100px">
+                        <p> Battery <br>Extensions</p>
+                    </div>
+                    <div class="rose">
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163612.png" alt="" width="100px"
+                            height="100px">
+                        <p> crafts & <br>hobby</p>
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163617.png" alt="" width="100px"
+                            height="100px">
+                        <p> kictchen <br>appliances </p>
+                    </div>
+                    <div class="rose">
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163621.png" alt="" width="100px"
+                            height="100px">
+                        <p> card & <br>Board games</p>
+                        <img class="flower" src="./asscoriess/Screenshot 2025-07-01 163626.png" alt="" width="100px"
+                            height="100px">
+                        <p> ear buds <br> & more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mike">
+            <div id="eren">
+                <div class="coa">
+                    <img src="./power/Screenshot 2025-07-01 180014.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p>$2390 <del>$4050</del> <br>
+                        <span>$2123off</span> <br>
+                        Portronics Ampbox 27K 65W 27000 mAh 4-in-1 Fast charging Power Bank
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.5</span>(768)
+                    </p>
+                </div>
+
+                <div class="coa">
+                    <img src="./power/Screenshot 2025-07-01 180032.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $12009 <del>$43050</del> <br>
+                        <span>$23000 off</span> <br>
+                        Ambrane 85W Fast Charging Powerbank, Power Delivery & Quick Charge
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.4</span>(1.5k)
+                    </p>
+                </div>
+                <div class="coa">
+                    <img src="./power/Screenshot 2025-07-01 180047.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $1209 <del>$3009</del> <br>
+                        <span>$1000 off</span> <br>
+                        boAt 10000mAh Power Bank w/ 22.5W Fast Charging & Smart IC Protection - PB300
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.0</span>(239)
+
+                    </p>
+                </div>
+                <div class="coa">
+                    <img src="./power/Screenshot 2025-07-01 180125.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $1349 <del>$2359</del> <br>
+                        <span>$1250 off</span> <br>
+                        Ambrane 10000Mah Slim & Compact Powerbank, 22.5W Fast Charging, Usb & Type C Output
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(5.7K)
+                    </p>
+                </div>
+                <div class="coa">
+                    <img src="./power/Screenshot 2025-07-01 180136.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $1334 <del>$3239</del> <br>
+                        <span>$1034 off</span> <br>
+                        Ambrane 10000mah Magsafe Fast Wireless Charging Power Bank for All Qi Enabled Devices
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(579)
+                    </p>
+                </div>
+                <div class="coa">
+                    <img src="./power/Screenshot 2025-07-01 180152.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $1439 <del>$2459</del> <br>
+                        <span>$1320 off</span> <br>
+                        Dubstep Powerblitz X2 10,000 mAh with Dual USB Port & Type-C Multi Device Charging Powerbank
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(579)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="tk">
+            <div id="ro">
+                <div id="np">
+                    <h1> WHOLESOME MEALS </h1>
+                    <p> Delight in every <br>
+                        bite with these <br>
+                        delicacies
+                    </p>
+                    <div>
+                        <button id="redd" type="button">More items <i class="fa-solid fa-greater-than"
+                                style="color: #f2f2f2;"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="tin">
+                <div id="matrix">
+                    <div class="badam">
+                        <img src="./daal/Screenshot 2025-07-01 184149.png" alt="" width="150px" height="160px">
+                        <button class="er" type="button">Add Now</button>
+                        <p>$220 <del>$350</del> <br>
+                            <span>$140 off</span> <br>
+                            Chicken Karaikudi & Rice
+                            <br>
+                            <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.4</span>(2.2k)
+                        </p>
+                    </div>
+
+                    <div class="badam">
+                        <img src="./daal/Screenshot 2025-07-01 184202.png" alt="" width="150px" height="160px">
+                        <button class="er" type="button">Add Now</button>
+                        <p> $189 <del>$350</del> <br>
+                            <span>$130 off</span> <br>
+                            Kadhi Pakora & Rice
+                            <br>
+                            <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.4</span>(1.5k)
+
+                        </p>
+                    </div>
+                    <div class="badam">
+                        <img src="./daal/Screenshot 2025-07-01 184212.png" alt="" width="150px" height="160px">
+                        <button class="er" type="button">Add Now</button>
+                        <p> $189 <del>$339</del> <br>
+                            <span>$190 off</span> <br>
+                            Chole & Rice
+                            <br>
+                            <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.0</span>(239)
+
+                        </p>
+                    </div>
+                    <div class="badam">
+                        <img src="./daal/Screenshot 2025-07-01 184221.png" alt="" width="150px" height="160px">
+                        <button class="er" type="button">Add Now</button>
+                        <p> $129 <del>$339</del> <br>
+                            <span>$170 off</span> <br>
+                            Dal Makhani
+                            <br>
+                            <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(579)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="bank">
+            <div id="cv">
+                <div class="cola">
+                    <img src="./comb/Screenshot 2025-07-01 191200.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p>$239 <del>$305</del> <br>
+                        <span>$123off</span> <br>
+                        Gubb Styling Hair Brush - Styler Range
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.5</span>(768)
+                    </p>
+                </div>
+
+                <div class="cola">
+                    <img src="./comb/Screenshot 2025-07-01 191214.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $109 <del>$125</del> <br>
+                        <span>$23 off</span> <br>
+                        Gubb Straight And Curved Hair Pin
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.4</span>(1.5k)
+                    </p>
+                </div>
+                <div class="cola">
+                    <img src="./comb/Screenshot 2025-07-01 191230.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $339 <del>$409</del> <br>
+                        <span>$100 off</span> <br>
+                        Gubb Vogue Paddle Hair Brush - Large
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.0</span>(239)
+
+                    </p>
+                </div>
+                <div class="cola">
+                    <img src="./comb/Screenshot 2025-07-01 191240.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $750 <del>$830</del> <br>
+                        <span>$125 off</span> <br>
+                        Swiss Beauty Professional Face & Eye Brush Set SB-F01
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(5.7K)
+                    </p>
+                </div>
+                <div class="cola">
+                    <img src="./comb/Screenshot 2025-07-01 191256.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $181 <del>$239</del> <br>
+                        <span>$134 off</span> <br>
+                        Gubb Make Up Brush Foundation
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(579)
+                    </p>
+                </div>
+                <div class="cola">
+                    <img src="./comb/Screenshot 2025-07-01 191312.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button">Add Now</button>
+                    <p> $939 <del>$1459</del> <br>
+                        <span>$420 off</span> <br>
+                        MARS Cosmetics Tools Of Titan Brush Set Of 8 With Holder
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(579)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h1 class="title"> Grocery & Kitchen</h1>
+        <div id="ben">
+            <div class="coffee">
+                <img src="./vege shop/Screenshot 2025-07-02 115246.png" alt="" width="180px" height="120px">
+                <p> Fruits & <br>
+                    vegetables </p>
+
+
+            </div>
+            <div class="coffee">
+                <img src="./vege shop/Screenshot 2025-07-01 195135.png" width="180px" height="120px">
+                <p> diary , bread <br>
+                    & eggs </p>
+
+
+            </div>
+
+            <div class="coffee">
+                <img src="./vege shop/Screenshot 2025-07-01 195141.png" alt="" width="180px" height="120px">
+                <p>atta , rice,<br>
+                    oil & dals </p>
+
+
+            </div>
+
+            <div class="coffee">
+                <img src="./vege shop/Screenshot 2025-07-01 195159.png" alt="" width="180px" height="120px">
+                <p> meat, fish <br> &
+                    eggs </p>
+
+
+            </div>
+
+            <div class="coffee">
+                <img src="./vege shop/Screenshot 2025-07-01 195210.png" alt="" width="180px" height="120px">
+                <p> masala & <br>
+                    dry furits </p>
+            </div>
+
+            <div class="coffee">
+                <img src="./vege shop/Screenshot 2025-07-01 195218.png" alt="" width="180px" height="120px">
+                <p> breakfast <br>&
+                    sauces</p>
+
+
+            </div>
+            <div class="coffee">
+                <img src="./vege shop/Screenshot 2025-07-01 195226.png" alt="" width="180px" height="120px">
+                <p>packages <br>
+                    food</p>
+            </div>
+
+        </div>
+        <h1 class="title"> Snacks & Drinks</h1>
+        <div id="sen">
+            <div class="coffee">
+                <img src="./snacks/Screenshot 2025-07-02 112019.png" alt="" width="100px" height="100px">
+                <p> zepto <br>
+                    Cafe </p>
+            </div>
+            <div class="coffee">
+                <img src="snacks/Screenshot 2025-07-02 112044.png" width="100px" height="100px">
+                <p>Tea,Coffee <br>&
+                    More </p>
+            </div>
+
+            <div class="coffee">
+                <img src="./snacks/Screenshot 2025-07-02 112058.png" alt="" width="100px" height="100px">
+                <p>ice cream <br> &
+                    More </p>
+            </div>
+
+            <div class="coffee">
+                <img src="./snacks/Screenshot 2025-07-02 112110.png" alt="" width="100px" height="100px">
+                <p> Forzen <br>
+                    Food</p>
+            </div>
+            <div class="coffee">
+                <img src="./snacks/Screenshot 2025-07-02 112118.png" alt="" width="100px" height="100px">
+                <p> sweet <br>
+                    cravings </p>
+            </div>
+
+            <div class="coffee">
+                <img src="./snacks/Screenshot 2025-07-02 112135.png" alt="" width="100px" height="100px">
+                <p>Cold drinks <br> &
+                    juices</p>
+            </div>
+            <div class="coffee">
+                <img src="./snacks/Screenshot 2025-07-02 112158.png" alt="" width="100px" height="100px">
+                <p>munchies
+                </p>
+            </div>
+            <div class="coffee">
+                <img src="./snacks/Screenshot 2025-07-02 112210.png" alt="" width="100px" height="100px">
+                <p>biscuits& <br>
+                    cookies </p>
+            </div>
+        </div>
+
+        <h1 class="title"> Beauty & Personal care </h1>
+        <div id="jen">
+            <div class="coffee">
+                <img src="./personal care/Screenshot 2025-07-02 120942.png" alt="" width="180px" height="120px">
+                <p>
+                    makeup & <br>
+                    beauty</p>
+            </div>
+            <div class="coffee">
+                <img src="./personal care/Screenshot 2025-07-02 120959.png" width="180px" height="120px">
+                <p> skincare <br>
+                </p>
+            </div>
+
+            <div class="coffee">
+                <img src="./personal care/Screenshot 2025-07-02 121013.png" alt="" width="180px" height="120px">
+                <p> baby <br>
+                    care</p>
+            </div>
+
+            <div class="coffee">
+                <img src="./personal care/Screenshot 2025-07-02 121027.png" alt="" width="180px" height="120px">
+                <p> Bath & <br>
+                    Body </p>
+            </div>
+
+            <div class="coffee">
+                <img src="./personal care/Screenshot 2025-07-02 121035.png" alt="" width="180px" height="120px">
+                <p>Hair & <br>
+                    Care </p>
+            </div>
+
+            <div class="coffee">
+                <img src="./personal care/Screenshot 2025-07-02 121057.png" alt="" width="180px" height="120px">
+                <p> jewellery &<br>
+                    accessories</p>
+            </div>
+            <div class="coffee">
+                <img src="./personal care/Screenshot 2025-07-02 121108.png" alt="" width="180px" height="120px">
+                <p>Apperal & <br>
+                    Life style</p>
+            </div>
+
+        </div>
+        <h1 class="title">Trendiest kicks!</h1>
+        <div id="tank">
+            <div id="vi">
+                <div class="cola">
+                    <img src="./slipper/Screenshot 2025-07-02 130018.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button"><i class="fa-regular fa-bell" style="color: #d43e0c;"></i>
+                        Notify</button>
+                    <p>$1139 <del>$2305</del> <br>
+                        <span>$1123off</span> <br>
+                        Puma Marine Unisex Slides | Black- White-Castlerock | Size - UK 6
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.5</span>(768)
+                    </p>
+                </div>
+
+                <div class="cola">
+                    <img src="./slipper/Screenshot 2025-07-02 130033.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button"><i class="fa-regular fa-bell"
+                            style="color: #d43e0c;"></i>Notify</button>
+                    <p> $1109 <del>$1225</del> <br>
+                        <span>$232 off</span> <br>
+                        Puma Marine Unisex Slides | Black- White-Castlerock | Size - UK 8
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.4</span>(1.5k)
+                    </p>
+                </div>
+                <div class="cola">
+                    <img src="./slipper/Screenshot 2025-07-02 130050.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button"><i class="fa-regular fa-bell"
+                            style="color: #d43e0c;"></i>Notify</button>
+                    <p> $1339 <del>$2409</del> <br>
+                        <span>$1300 off</span> <br>
+                        Puma Marine Unisex Slides | White-New Navy-Fizzy Apple | Size - UK 6
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.0</span>(239)
+
+                    </p>
+                </div>
+                <div class="cola">
+                    <img src="./slipper/Screenshot 2025-07-02 130128.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button"><i class="fa-regular fa-bell"
+                            style="color: #d43e0c;"></i>Notify</button>
+                    <p> $1750 <del>$2830</del> <br>
+                        <span>$1253 off</span> <br>
+                        Puma Unisex Turin 3 Sneakers White and Black Uk/Ind - 6
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(5.7K)
+                    </p>
+                </div>
+                <div class="cola">
+                    <img src="./slipper/Screenshot 2025-07-02 130107.png" alt="" width="150px" height="160px">
+                    <button class="er" type="button"><i class="fa-regular fa-bell"
+                            style="color: #d43e0c;"></i>Notify</button>
+                    <p> $1813 <del>$2392</del> <br>
+                        <span>$1343 off</span> <br>
+                        Puma Marine Unisex Slides | White-New Navy-Fizzy Apple | Size - UK 7
+                        <br>
+                        <span> <i class="fa-solid fa-star" style="color: #63E6BE;"></i>4.1</span>(579)
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div id="zeto">
+            <h1>The Place that fits all <br>
+                your needs </h1>
+            <p>Crafted with love from <span>Zepto Team</span> <img id="hearte"
+                    src="./vecteezy_heart-emoji-png-file_18824830.png" alt="" width="50px" height="50px"> </p>
+        </div>
+        <div id="how">
+            <h3 id="it">How it Works </h1>
+                <div id="works">
+                    <div class="app">
+                        <img src="./how/Screenshot 2025-07-02 141435.png" alt="" height="80px" width="100px">
+                        <h4>Open the app</h4>
+                        <p> Choose from over 7000 products across groceries, fresh fruits & veggies, meat, pet care,
+                            beauty items & more </p>
+                    </div>
+                    <div class="app">
+                        <img src="./how/Screenshot 2025-07-02 141444.png" alt="" height="80px" width="100px">
+                        <h4>Place an order</h4>
+                        <p> Add your favourite items to the cart & avail the best offers </p>
+                    </div>
+                    <div class="app">
+                        <img src="./how/Screenshot 2025-07-02 141450.png" alt="" height="80px" width="100px">
+                        <h4>Get free delivery</h4>
+                        <p> Experience lighting-fast speed & get all your items delivered in 10 minutes
+
+                        </p>
+                    </div>
+                </div>
+
+        </div>
+        <div id="brands">
+            <h3>Popular Searches</h3>
+            <pre>  <span> Products </span>       :Avocado|Strawberry|Pomegranate|Beetroot|Ash gourd|Bottle gourd|Lady finger|Potato|Lemon|Dalchini|Fennel seeds|Blueberry|Papaya|Dragon fruit|Mushroom|Lettuce
+   <span>Brands</span>          :Yakult|My Muse|Aashirvaad Atta|Too Yumm|Lays|Figaro Olive Oil|Nandini Milk|Amul|Mother Dairy Near Me|Fortune Oil|Superyou|Durex Condoms|Ferns and Petals      
+  <span> Categories</span>     :Grocery|Cigarettes|Chips|Curd|Hukka flavour|Paan shop near me|Eggs price|Cheese slice|Fresh fruits|Fresh vegetables|Refined oil|Butter price|Paneer price
+           
+           </pre>
+        </div>
+
+
+        <div id="dh2">
+            <h2> Categories</h2>
+            <div id="datali">
+                <div class="il">
+                    <ul>
+                        <li>Fruits & Vegetables</li>
+                        <li>Sweet Cravings</li>
+                        <li>Dairy, Bread & Eggs </li>
+                        <li> Meats, Fish & Eggs</li>
+                        <li> Biscuits</li>
+                        <li>Cleaning Essentials</li>
+                        <li> Homegrown Brands</li>
+
+                    </ul>
+                </div>
+                <div class="il">
+                    <ul>
+                        <li>Atta, Rice, Oil & Dals</li>
+                        <li>Dairy, Bread & Eggs</li>
+                        <li> Tea, Coffee & More</li>
+                        <li> Home Needs </li>
+                        <li> Paan Corner </li>
+                    </ul>
+                </div>
+                <div class="il">
+                    <ul>
+                        <li> Masala & Dry Fruits </li>
+                        <li> Cold Drinks & Juices </li>
+                        <li> Biscuits </li>
+                        <li> Electricals & Accessories </li>
+                    </ul>
+                </div>
+                <div class="il">
+                    <ul>
+                        <li> Sweet Cravings </li>
+                        <li> Munchies </li>
+                        <li> Makeup & Beauty </li>
+                        <li> Hygiene & Grooming </li>
+                    </ul>
+                </div>
+                <div class="il">
+                    <ul>
+                        <li>Frozen Food & Ice Creams</li>
+                        <li> Meats, Fish & Eggs </li>
+                        <li> Bath & Body </li>
+                        <li> Health & Baby Care </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="footer">
+            <div class="back">
+                <h1>Zepto </h1>
+                <p> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i> <i
+                        class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-linkedin"></i> </p>
+                <p> © Zepto Marketplace Private Limited </p>
+
+            </div>
+            <div class="back">
+                <ul>
+                    <li>Home</li>
+                    <li>Delivery Areas </li>
+                    <li> Careers </li>
+                    <li> Customer Support </li>
+                    <li> Press </li>
+                </ul>
+
+            </div>
+
+
+            <div class="back">
+                <ul>
+                    <li> Privacy Policy </li>
+                    <li> Terms of Use </li>
+                    <li> Responsible Disclosure Policy </li>
+                    <li> Mojo - a Zepto Blog </li>
+                    <li> Sell on Zepto </li>
+                    <li> Deliver with Zepto </li>
+
+                </ul>
+            </div>
+
+            <div id ="jack">
+                 <p> Download App </p>
+                 <button class="play" type="button"> <span><img src="./vecteezy_google-play-store-icon-logo-symbol_22484511.png" alt=""  height="40px" width="30px" >Get it on play store </span>  </button><br>
+                 <button  class="play"   type="button"><span>  <img src="./vecteezy_apple-brand-icon-illustration-top-tech-company-logotype_12871451.png" alt=""  height="40px" width="30px" >    Get it on app store </span> </button>    
+            
+          </div>  
+          </div>
+
+
+
+
+
+</body>
+
+</html>

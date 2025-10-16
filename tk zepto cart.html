@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ZEPTO</title>
+    <link rel="icon" href="./Logo_of_Zepto.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<style>
+    #parent {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: rgb(238, 196, 238);
+    }
+
+    #select {
+        display: flex;
+    }
+
+    #seller {
+        margin-left: 450px;
+    }
+
+    #seller a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #sellera:hover {
+        color: purple;
+    }
+
+    #z {
+        color: rgb(55, 15, 110);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+
+    }
+
+    select {
+        margin-left: 30px;
+        height: 30px;
+
+    }
+
+    #form {
+        position: relative;
+    }
+
+    #mag {
+        position: absolute;
+        right: 670px;
+        top: 55px;
+    }
+
+    #fo {
+        margin-left: 300px;
+
+    }
+
+    #se {
+        width: 270px;
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+
+
+
+    #train button:hover {
+        width: 300px;
+        transition: left 2s;
+    }
+
+    #ment {
+        display: flex;
+        justify-content: center;
+    }
+
+    #d1 {
+        margin-left: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #d1 h6 {
+        background-color: skyblue;
+        width: 100px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10px;
+        color: #443d3d;
+    }
+
+    #d22 {
+        font-size: 20px;
+    }
+
+    #agro {
+        line-height: 40px;
+        margin-top: 30px;
+    }
+
+    #in {
+        width: 200px;
+        height: 30px;
+        background-color: rgba(255, 81, 92, 255);
+        color: white;
+        border-radius: 10px;
+    
+    }
+
+
+    #d24 {
+        display: flex;
+    }
+
+    #d241 {
+        display: flex;
+    }
+
+    #d242 {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #coupon {
+        margin-left: 20px;
+    }
+
+    #no {
+        display: flex;
+        gap: 30px;
+        margin-left: 20px;
+    }
+
+    * {
+        font-family: sans-serif;
+    }
+
+    #senthilblock {
+        margin-top: 10px;
+        margin-left: 120px;
+        width: 900px;
+        border: 1px solid black;
+    }
+
+    #gunablock {
+        display: flex;
+        width: 400px;
+    }
+
+    #d2 span {
+        border-radius: 5px;
+        background-color: green;
+    }
+
+    #d23 {
+        background-color: green;
+        border-radius: 5px;
+        width: 160px;
+    }
+    #anbu{
+        margin-left: 100px;
+        margin-top: 70px;
+    }
+    #java{
+        border: 1px solid black;
+    }
+    #rajan{
+        border: 1px solid black;
+    }
+    
+        #brands {
+            margin-left: 100px;
+            line-height: 50px;
+        }
+
+        #brands h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 18px;
+        }
+
+        #brands span {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #brands pre {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #datali {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .il {
+            line-height: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #dh2 h2 {
+            margin-left: 120px;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 60px;
+        }
+        .back{
+            line-height: 40px;
+        }
+        .play {
+                border:1px solid black ;
+                font-size: 15px;
+                height: 50px;
+                width: 300px;
+                border-radius: 4px; 
+               margin-top: 10px;
+               padding-bottom: 50px;
+        }
+         .back h1{
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+         }
+        .back span{
+                 text-align: center;
+         }
+</style>
+
+<body>
+    <div id="parent">
+        <div id="select">
+
+            <a href="./tk zepto .html"><span id="z">zepto</span></a>
+            <select name="english" id="english">
+                <option value="">... Select your location...</option>
+                <option value="english">chennai </option>
+                <option value="tamil">madurai </option>
+                <option value="telugu">trichy </option>
+                <option value="French">vellore </option>
+            </select>
+
+            <div id="fo">
+                <form action="">
+                    <input id="se" type="text" placeholder="search">
+                    <i id="mag" class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+
+            <div id="seller">
+
+                <a href="./tk zepto login.html"><i class="fa-regular fa-user" style="color: #1a1a1a;"></i> Login</a>
+                <i class="fa-solid fa-cart-shopping" style="color: #303031;"></i>
+                <a href=""> Add cart</a>
+            </div>
+        </div>
+    </div>
+    <div id="ment">
+        <div id="gunablock">
+            <div id="agro">
+                <img src="./iccccon/Screenshot 2025-07-04 132923.png" alt="" height="60px" width="60px"><br>
+                <img src="./iccccon/Screenshot 2025-07-04 132942.png" alt="" height="60px" width="60px"><br>
+                <img src="./iccccon/Screenshot 2025-07-04 132955.png" alt="" height="60px" width="60px"><br>
+                <img src="./iccccon/Screenshot 2025-07-04 133010.png" alt="" height="60px" width="60px"><br>
+                <img src="./iccccon/Screenshot 2025-07-04 133028.png" alt="" height="60px" width="60px">
+            </div>
+            <div>
+                <img src="./elevate/Screenshot 2025-07-01 132649.png" alt="" width="450px" height="400px">
+                <div id="train"> <span>₹11729 <del>₹37999</del> </span><a href="tkzeptopayment.html"><input id="in" type="button" value="add cart"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="senthilblock">
+                <div id="d1">
+                    <h6>Open Box Verification </h6>
+                    <h5>Agaro ></h5>
+                    <p id=" d22">Agaro Rejoice Foot, Calf And Leg Massager With <br> Heat And Vibration, 80W, 4 Motors
+                    </p>
+                    <p id="d2"> Net Qty:1pc <span><i class="fa-solid fa-star" style="color: #f4f5f6;"></i>4.5 </span>
+                        (728)
+                    </p>
+                    <p> <i class="fa-solid fa-bolt-lightning" style="color: #63E6BE;"></i></i> <span id="d23"> Get in 14
+                            minutes </span></p>
+                    <p> ₹11729 69%off <br> MRP <del>₹37564</del> (incl.of all taxes) </p>
+                </div>
+                <div id="d24">
+                    <div id="d241">
+                        <img src="./bank/Screenshot 2025-07-04 114002.png" alt="" width="60px" height="40px">
+                        <p> C11729 /month <br>
+                            with no emi cost <i class="fa-solid fa-greater-than" style="color: #d41c6c;"></i> </p>
+
+                    </div>
+                    <div id="d242">
+                        <img src="./bank/Screenshot 2025-07-04 114019.png" alt="" width="50px" height="40px">
+                        <p> Get at ₹10729 <br>
+                            view all offers <i class="fa-solid fa-greater-than" style="color: #d41c6c;"></i> </p>
+
+                    </div>
+                       <hr> 
+                </div>
+                <div id="coupon">
+                    <h4 style="text-decoration: underline;"> Coupons & Offers </h4>
+                    <p> <img src="./BANK branch/Screenshot 2025-07-04 190206.png" alt=""> <span>Get flat 10% discount
+                            with
+                            yes bank </span> </p>
+                    <p> <img src="./BANK branch/Screenshot 2025-07-04 190215.png" alt=""> <span>Get upto ₹200 off on
+                            orders
+                            above 1598
+                        </span> </p>
+                    <p> <img src="./BANK branch/Screenshot 2025-07-04 190117.png" alt=""> <span>Get 5% discount with
+                            Coffeine bank </span> </p>
+                    </p>
+                    <p> <img src="./BANK branch/Screenshot 2025-07-04 190222.png" alt=""> <span>Get 5% discount with
+                            ABU bank </span> </p>
+                    </p>
+                    <p><img src="./BANK branch/Screenshot 2025-07-05 112943.png" alt=""> <span>Get upto ₹25 cashback on
+                            using Amazon Pay UPI
+                        </span> </p>
+                </div>
+                <hr>
+                <div id="no">
+
+                    <p><i class="fa-solid fa-ban"></i>
+                        <SPan> No Return or <br> Exchange</SPan>
+                    </p>
+                    <p><i class="fa-solid fa-truck-fast"></i>
+                        <span>Fast <br> Delivery</span>
+                    </p>
+                </div>
+                <div id="java">
+                    <h3>highlights </h3>
+                    <table>
+                        <tr>
+                            <td>brand</td>
+                            <td><b>Agaro</b></td>
+                        </tr>
+                        <tr>
+                            <td>product type</td>
+                            <td><b>Leg Massager</b></td>
+                        </tr>
+                        <tr>
+                            <td>model name</td>
+                            <td><b>Rejoice</b></td>
+                        </tr>
+                        <tr>
+                            <td>colour name</td>
+                            <td><b>Grey</b></td>
+                        </tr>
+                        <tr>
+                            <td>no of modes
+                            </td>
+                            <td><b>3</b></td>
+                        </tr>
+                        <tr>
+                            <td>material type</td>
+                            <td><b>Plastic and Stainless Steel</b></td>
+                        </tr>
+                        <tr>
+                            <td>power source</td>
+                            <td><b>Electric Powered</b></td>
+                        </tr>
+                        <tr>
+                            <td> product dimensions</td>
+                            <td><b> 48 x 42.5 x 42.5 cm </b></td>
+                        </tr>
+                        <tr>
+                            <td>key features</td>
+                            <td><b> Powerful 80W motor for deep massage, heat and vibration for soothing relief,
+                                    removable and washable foot
+                                    sleeves, auto shut-off for safety</b></td>
+                        </tr>
+                        <tr>
+                            <td> item included</td>
+                            <td><b> 1 x Massager</b></td>
+                        </tr>
+                        <tr>
+                            <td> warranty</td>
+                            <td><b> 1 year</b></td>
+                        </tr>
+                        <tr>
+                            <td> power consumption</td>
+                            <td><b>80 W</b></td>
+                        </tr>
+                        <tr>
+                            <td> waterproof</td>
+                            <td><b> No</b></td>
+                        </tr>
+                        <tr>
+                            <td> weight</td>
+                            <td><b> 12.1 kg</b></td>
+                        </tr>
+                        <tr>
+                            <td>unit</td>
+                            <td><b>1 pc</b></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div id="rajan">
+                    <h3> Information</h3>
+                    <table>
+                        <tr>
+                            <td>disclaimer</td>
+                            <td><b>All images are for representational purposes only. It is advised that you read the
+                                    batch and manufacturing details, directions for use, allergen information, health
+                                    and nutritional claims (wherever applicable), and other details mentioned on the
+                                    label before consuming the product. For combo items, individual prices can be viewed
+                                    on the page.</b></td>
+                        </tr>
+                        <tr>
+                            <td>customer care details</td>
+                            <td><b>In case of any issue, contact us E-mail address: support@zeptonow.com</b></td>
+                        </tr>
+                        <tr>
+                            <td>Seller Name</td>
+                            <td><b>Geddit Convenience Private Limited</b></td>
+                        </tr>
+                        <tr>
+                            <td>Seller Address</td>
+                            <td><b>Geddit Convenience Private Limited, Unit 803, Lodha Supremus, Saki Vihar Road, Opp
+                                    MTNL, Office, Powai, Mumbai, Maharashtra, India,400072 For Support ReachOut :
+                                    support+geddit@zeptonow.com
+                                    Geddit Convenience Private Limited, Unit 803, Lodha Supremus, Saki Vihar Road, Opp
+                                    MTNL, Office, Powai, Mumbai, Maharashtra, India,400072 For Support ReachOut :
+                                    support+geddit@zeptonow.com</b></td>
+                        </tr>
+                        <tr>
+                            <td>Seller License No.</td>
+                            <td><b>11521998000248</b></td>
+                        </tr>
+                        <tr>
+                            <td>Country of Origin</td>
+                            <td><b>China</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="anbu">
+            <h3>How to Buy Agaro Rejoice Foot, Calf And Leg Massager With Heat And Vibration, 80W, 4 Motors Online on
+                Zepto Step-by-Step </h3>
+                <ol>
+                    <li> Search for "Agaro Rejoice Foot, Calf And Leg Massager With Heat And Vibration, 80W, 4 Motors" on the Zepto app or website or browse through the relevant <br> category section.  </li>
+                    <li>View Agaro Rejoice Foot, Calf And Leg Massager With Heat And Vibration, 80W, 4 Motors price, available options, and customer ratings.</li>
+                      <li>Add the item to your cart and proceed to buy Agaro Rejoice Foot, Calf And Leg Massager With Heat And Vibration, 80W, 4 Motors online with secure <br> and flexible payment options</li>
+                      <li>Get Agaro Rejoice Foot, Calf And Leg Massager With Heat And Vibration, 80W, 4 Motors delivered quickly with Zepto's trusted delivery network and enjoy a <br> hassle-free experience.</li>
+                </ol>
+        </div>
+
+      <div id="brands">
+            <h3>Popular Searches</h3>
+            <pre>  <span> Products </span>       :Avocado|Strawberry|Pomegranate|Beetroot|Ash gourd|Bottle gourd|Lady finger|Potato|Lemon|Dalchini|Fennel seeds|Blueberry|Papaya|Dragon fruit|Mushroom|Lettuce
+   <span>Brands</span>          :Yakult|My Muse|Aashirvaad Atta|Too Yumm|Lays|Figaro Olive Oil|Nandini Milk|Amul|Mother Dairy Near Me|Fortune Oil|Superyou|Durex Condoms|Ferns and Petals      
+  <span> Categories</span>     :Grocery|Cigarettes|Chips|Curd|Hukka flavour|Paan shop near me|Eggs price|Cheese slice|Fresh fruits|Fresh vegetables|Refined oil|Butter price|Paneer price
+           
+           </pre>
+        </div>
+
+
+        <div id="dh2">
+            <h2> Categories</h2>
+            <div id="datali">
+                <div class="il">
+                    <ul>
+                        <li>Fruits & Vegetables</li>
+                        <li>Sweet Cravings</li>
+                        <li>Dairy, Bread & Eggs </li>
+                        <li> Meats, Fish & Eggs</li>
+                        <li> Biscuits</li>
+                        <li>Cleaning Essentials</li>
+                        <li> Homegrown Brands</li>
+
+                    </ul>
+                </div>
+                <div class="il">
+                    <ul>
+                        <li>Atta, Rice, Oil & Dals</li>
+                        <li>Dairy, Bread & Eggs</li>
+                        <li> Tea, Coffee & More</li>
+                        <li> Home Needs </li>
+                        <li> Paan Corner </li>
+                    </ul>
+                </div>
+                <div class="il">
+                    <ul>
+                        <li> Masala & Dry Fruits </li>
+                        <li> Cold Drinks & Juices </li>
+                        <li> Biscuits </li>
+                        <li> Electricals & Accessories </li>
+                    </ul>
+                </div>
+                <div class="il">
+                    <ul>
+                        <li> Sweet Cravings </li>
+                        <li> Munchies </li>
+                        <li> Makeup & Beauty </li>
+                        <li> Hygiene & Grooming </li>
+                    </ul>
+                </div>
+                <div class="il">
+                    <ul>
+                        <li>Frozen Food & Ice Creams</li>
+                        <li> Meats, Fish & Eggs </li>
+                        <li> Bath & Body </li>
+                        <li> Health & Baby Care </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="footer">
+            <div class="back">
+                <h1>Zepto </h1>
+                <p> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i> <i
+                        class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-linkedin"></i> </p>
+                <p> © Zepto Marketplace Private Limited </p>
+
+            </div>
+            <div class="back">
+                <ul>
+                    <li>Home</li>
+                    <li>Delivery Areas </li>
+                    <li> Careers </li>
+                    <li> Customer Support </li>
+                    <li> Press </li>
+                </ul>
+
+            </div>
+
+
+            <div class="back">
+                <ul>
+                    <li> Privacy Policy </li>
+                    <li> Terms of Use </li>
+                    <li> Responsible Disclosure Policy </li>
+                    <li> Mojo - a Zepto Blog </li>
+                    <li> Sell on Zepto </li>
+                    <li> Deliver with Zepto </li>
+
+                </ul>
+            </div>
+
+            <div id ="jack">
+                 <p> Download App </p>
+                 <button class="play" type="button"> <span><img src="./vecteezy_google-play-store-icon-logo-symbol_22484511.png" alt=""  height="40px" width="30px" >Get it on play store </span>  </button><br>
+                 <button  class="play"   type="button"><span>  <img src="./vecteezy_apple-brand-icon-illustration-top-tech-company-logotype_12871451.png" alt=""  height="40px" width="30px" >    Get it on app store </span> </button> 
+                
+                
+                
+                
+            
+          </div>  
+          </div>
+
+    </body>
+</html>
