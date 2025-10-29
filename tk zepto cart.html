@@ -2,14 +2,242 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>ZEPTO</title>
     <link rel="icon" href="./Logo_of_Zepto.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 
-</head>
+<style>
+    #parent {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: rgb(238, 196, 238);
+    }
+
+    #select {
+        display: flex;
+    }
+
+    #seller {
+        margin-left: 450px;
+    }
+
+    #seller a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #sellera:hover {
+        color: purple;
+    }
+
+    #z {
+        color: rgb(55, 15, 110);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+
+    }
+
+    select {
+        margin-left: 30px;
+        height: 30px;
+
+    }
+
+    #form {
+        position: relative;
+    }
+
+    #mag {
+        position: absolute;
+        right: 670px;
+        top: 55px;
+    }
+
+    #fo {
+        margin-left: 300px;
+
+    }
+
+    #se {
+        width: 270px;
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+
+
+
+    #train button:hover {
+        width: 300px;
+        transition: left 2s;
+    }
+
+    #ment {
+        display: flex;
+        justify-content: center;
+    }
+
+    #d1 {
+        margin-left: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #d1 h6 {
+        background-color: skyblue;
+        width: 100px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10px;
+        color: #443d3d;
+    }
+
+    #d22 {
+        font-size: 20px;
+    }
+
+    #agro {
+        line-height: 40px;
+        margin-top: 30px;
+    }
+
+    #in {
+        width: 200px;
+        height: 30px;
+        background-color: rgba(255, 81, 92, 255);
+        color: white;
+        border-radius: 10px;
+    
+    }
+
+
+    #d24 {
+        display: flex;
+    }
+
+    #d241 {
+        display: flex;
+    }
+
+    #d242 {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #coupon {
+        margin-left: 20px;
+    }
+
+    #no {
+        display: flex;
+        gap: 30px;
+        margin-left: 20px;
+    }
+
+    * {
+        font-family: sans-serif;
+    }
+
+    #senthilblock {
+        margin-top: 10px;
+        margin-left: 120px;
+        width: 900px;
+        border: 1px solid black;
+    }
+
+    #gunablock {
+        display: flex;
+        width: 400px;
+    }
+
+    #d2 span {
+        border-radius: 5px;
+        background-color: green;
+    }
+
+    #d23 {
+        background-color: green;
+        border-radius: 5px;
+        width: 160px;
+    }
+    #anbu{
+        margin-left: 100px;
+        margin-top: 70px;
+    }
+    #java{
+        border: 1px solid black;
+    }
+    #rajan{
+        border: 1px solid black;
+    }
+    
+        #brands {
+            margin-left: 100px;
+            line-height: 50px;
+        }
+
+        #brands h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 18px;
+        }
+
+        #brands span {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #brands pre {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #datali {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .il {
+            line-height: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #dh2 h2 {
+            margin-left: 120px;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 60px;
+        }
+        .back{
+            line-height: 40px;
+        }
+        .play {
+                border:1px solid black ;
+                font-size: 15px;
+                height: 50px;
+                width: 300px;
+                border-radius: 4px; 
+               margin-top: 10px;
+               padding-bottom: 50px;
+        }
+         .back h1{
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+         }
+        .back span{
+                 text-align: center;
+         }
+</style></head>
 <style>
     #parent {
         margin-top: 30px;
@@ -245,7 +473,7 @@
     <div id="parent">
         <div id="select">
 
-            <a href="./tk zepto .html"><span id="z">zepto</span></a>
+            <a href="./Index.html"><span id="z">zepto</span></a>
             <select name="english" id="english">
                 <option value="">... Select your location...</option>
                 <option value="english">chennai </option>
